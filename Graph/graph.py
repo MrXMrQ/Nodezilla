@@ -9,6 +9,7 @@ class Graph:
         edges: list[Edge],
         name: str = "Graph",
         color: str = "#000000",
+        visible: bool = True,
     ) -> None:
         if not (isinstance(nodes, list) and all(isinstance(x, Node) for x in nodes)):
             raise TypeError(f"Invalid 'nodes': expected a list of Nodes, got {nodes!r}")
@@ -30,6 +31,35 @@ class Graph:
         self._edges = edges
         self._name = name
         self._color = color
+        self._visible = visible
 
     def __str__(self) -> None:
         return f"Name: {self._name} \nColor: {self._color}\nNodes: {[f"{x}" for x in self._nodes]} \nEdges: {[f"{x}" for x in self._edges]}\n"
+
+    @property
+    def nodes(self) -> list[Node]:
+        return self._nodes
+
+    @property
+    def edges(self) -> list[Edge]:
+        return self._edges
+
+    @property
+    def name(self) -> str:
+        return self._name
+
+    @property
+    def color(self) -> str:
+        return self._color
+
+    @property
+    def visible(self) -> bool:
+        return self._visible
+
+    @visible.setter
+    def visible(self, value: bool) -> None:
+        if not isinstance(value, bool):
+            raise TypeError(
+                f"Invalid type for 'visible': expected 'bool', got '{type(value)}' instead."
+            )
+        self._visible = value
