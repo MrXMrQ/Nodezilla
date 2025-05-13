@@ -1,0 +1,14 @@
+{
+  "graph": {
+    "global_settings": { "color": "blue" },
+    "nodes": [
+      { "pos": [0, 0], "id": 1, "label": "Start", "color": "red" },
+      { "pos": [0, 0], "id": 2, "color": "#F44336" },
+      { "pos": [0, 0], "id": 3, "label": "End" }
+    ],
+    "edged": [
+      { "source": 1, "target": 2, "color": "GREEN" },
+      { "source": 2, "target": 3 }
+    ]
+  }
+}
