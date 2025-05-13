@@ -3,24 +3,13 @@
     "global_settings": { "name": "graph1", "color": "blue" },
     "nodes": [
       { "pos": [0, 0], "id": 1, "label": "Start", "color": "red" },
-      { "pos": [0, 0], "id": 2, "color": "#F44336" },
-      { "pos": [0, 0], "id": 3, "label": "End" }
+      { "pos": [1, 0], "id": 2, "color": "#F44336" },
+      { "pos": [0, 1], "id": 3, "label": "End" }
     ],
     "edges": [
       { "source": 1, "target": 2, "color": "GREEN" },
-      { "source": 2, "target": 3 }
-    ]
-  },
-  "graph2": {
-    "global_settings": { "name": "graph1", "color": "blue" },
-    "nodes": [
-      { "pos": [0, 0], "id": 1, "label": "Start", "color": "red" },
-      { "pos": [0, 0], "id": 2, "color": "#F44336" },
-      { "pos": [0, 0], "id": 3, "label": "End" }
-    ],
-    "edges": [
-      { "source": 1, "target": 2, "color": "GREEN" },
-      { "source": 2, "target": 3 }
+      { "source": 2, "target": 3 },
+      { "source": 3, "target": 1 }
     ]
   }
 }

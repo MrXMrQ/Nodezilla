@@ -1,4 +1,4 @@
-from node import Node
+from Graph.node import Node
 
 
 class Edge:
@@ -21,6 +21,9 @@ class Edge:
         self._source: Node = source
         self._target: Node = target
         self._color: str = color
+
+    def __str__(self) -> str:
+        return f"Connection: {self._source.pos} -> {self._target.pos}, Color: {self._color}"
 
     @property
     def source(self) -> Node:

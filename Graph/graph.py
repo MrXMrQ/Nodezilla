@@ -1,5 +1,5 @@
 from Graph.edge import Edge
-from node import Node
+from Graph.node import Node
 
 
 class Graph:
@@ -30,3 +30,6 @@ class Graph:
         self._edges = edges
         self._name = name
         self._color = color
+
+    def __str__(self) -> None:
+        return f"Name: {self._name} \nColor: {self._color}\nNodes: {[f"{x}" for x in self._nodes]} \nEdges: {[f"{x}" for x in self._edges]}\n"
