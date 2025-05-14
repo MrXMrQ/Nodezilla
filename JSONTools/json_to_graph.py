@@ -1,4 +1,4 @@
-from json_reader import JSONReader
+from JSONTools.json_reader import JSONReader
 from Graph.node import Node
 from Graph.edge import Edge
 from Graph.graph import Graph

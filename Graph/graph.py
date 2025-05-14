@@ -36,6 +36,19 @@ class Graph:
     def __str__(self) -> None:
         return f"Name: {self._name} \nColor: {self._color}\nNodes: {[f"{x}" for x in self._nodes]} \nEdges: {[f"{x}" for x in self._edges]}\n"
 
+    def __eq__(self, value) -> None:
+        if not isinstance(value, Graph):
+            raise TypeError(
+                f"Invalid 'value to compare': expected a Graph, got {value!r}"
+            )
+
+        if not len(self._nodes) == len(value._nodes) or not len(self._edges) == len(
+            value._edges
+        ):
+            return False
+
+        return True
+
     @property
     def nodes(self) -> list[Node]:
         return self._nodes

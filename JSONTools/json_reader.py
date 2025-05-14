@@ -3,7 +3,7 @@ import os
 
 
 class JSONReader:
-    def __init__(self, path: str = "graph.json") -> None:
+    def __init__(self, path: str = "JSONTools/graph.json") -> None:
         if not isinstance(path, str):
             raise TypeError(
                 f"Invalid type for 'path': expected 'str', got '{type(path)}' instead."

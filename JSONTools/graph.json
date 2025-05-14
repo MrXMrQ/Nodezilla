@@ -1,0 +1,65 @@
+{
+  "graph1": {
+    "global_settings": { "name": "Heart", "color": "red" },
+    "nodes": [
+      { "pos": [0, 0], "id": 1, "color": "red" },
+      { "pos": [-1.5, 2], "id": 2, "color": "#E91E63" },
+      { "pos": [-3, 3.5], "id": 3, "color": "#F06292" },
+      { "pos": [-1.5, 5], "id": 4, "color": "#F8BBD0" },
+      { "pos": [0, 4], "id": 5, "color": "#F48FB1" },
+      { "pos": [1.5, 5], "id": 6, "color": "#F8BBD0" },
+      { "pos": [3, 3.5], "id": 7, "color": "#F06292" },
+      { "pos": [1.5, 2], "id": 8, "color": "#E91E63" }
+    ],
+    "edges": [
+      { "source": 1, "target": 2 },
+      { "source": 2, "target": 3 },
+      { "source": 3, "target": 4 },
+      { "source": 4, "target": 5 },
+      { "source": 5, "target": 6 },
+      { "source": 6, "target": 7 },
+      { "source": 7, "target": 8 },
+      { "source": 8, "target": 1 }
+    ]
+  },
+  "graph2": {
+    "global_settings": { "name": "Pentagon", "color": "gold" },
+    "nodes": [
+      { "pos": [0, 3], "id": 1 },
+      { "pos": [0.95, 0.95], "id": 2 },
+      { "pos": [3, 1], "id": 3 },
+      { "pos": [1.4, -0.5], "id": 4 },
+      { "pos": [1.9, -3], "id": 5 },
+      { "pos": [0, -1.5], "id": 6 },
+      { "pos": [-1.9, -3], "id": 7 },
+      { "pos": [-1.4, -0.5], "id": 8 },
+      { "pos": [-3, 1], "id": 9 },
+      { "pos": [-0.95, 0.95], "id": 10 }
+    ],
+    "edges": [
+      { "source": 1, "target": 3 },
+      { "source": 3, "target": 5 },
+      { "source": 5, "target": 7 },
+      { "source": 7, "target": 9 },
+      { "source": 9, "target": 1 },
+      { "source": 2, "target": 4 },
+      { "source": 4, "target": 6 },
+      { "source": 6, "target": 8 },
+      { "source": 8, "target": 10 },
+      { "source": 10, "target": 2 }
+    ]
+  },
+  "graph3": {
+    "global_settings": { "name": "Triangle", "color": "blue" },
+    "nodes": [
+      { "pos": [0, 3], "id": 1, "label": "A", "color": "blue" },
+      { "pos": [-2.5, -2], "id": 2, "label": "B" },
+      { "pos": [2.5, -2], "id": 3, "label": "C" }
+    ],
+    "edges": [
+      { "source": 1, "target": 2 },
+      { "source": 2, "target": 3 },
+      { "source": 3, "target": 1 }
+    ]
+  }
+}

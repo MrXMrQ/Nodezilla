@@ -5,10 +5,10 @@ class Node:
         if not (
             isinstance(pos, list)
             and len(pos) == 2
-            and all(isinstance(x, int) for x in pos)
+            and all(isinstance(x, (int, float)) for x in pos)
         ):
             raise TypeError(
-                f"Invalid 'pos': expected a list of two integers, got {pos!r}"
+                f"Invalid 'pos': expected a list of two integers or floats, got {pos!r}"
             )
 
         if not isinstance(id, int):
